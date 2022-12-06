@@ -1,0 +1,546 @@
+/*==================== RESET STYLES ====================*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+ul li,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/*==================== RESET STYLES ====================*/
+/*==================== FONTS ====================*/
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+/*==================== FONTS ====================*/
+/*==================== VARIABLES ====================*/
+/*==================== VARIABLES ====================*/
+/*==================== MIXINS ====================*/
+/*==================== MIXINS ====================*/
+/*==================== BASIC PARAMETERS ====================*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  background: #fff;
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+.main .section-class:not(:last-child),
+.main .section-class:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .main .section-class:not(:last-child),
+.main .section-class:not(:last-child) {
+    margin-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+.main:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media (max-width: 1200px) {
+  .main:not(:last-child) {
+    margin-bottom: calc(40px + 20 * ((100vw - 320px) / 880));
+  }
+}
+
+/*==================== BASIC PARAMETERS ====================*/
+/*==================== REPEAT BLOCK ====================*/
+[class*=__container] {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.ibg-ie {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ibg-ie img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ibg {
+  position: relative;
+}
+.ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.title-block-l {
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .title-block-l {
+    font-size: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.title-block-l:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media (max-width: 1200px) {
+  .title-block-l:not(:last-child) {
+    margin-bottom: calc(20px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+.title-block-m {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+@media (max-width: 1200px) {
+  .title-block-m {
+    font-size: calc(20px + 4 * ((100vw - 320px) / 880));
+  }
+}
+.title-block-m:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .title-block-m:not(:last-child) {
+    margin-bottom: calc(15px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 150px;
+  width: 100%;
+  padding: 7px;
+  min-height: 50px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(238, 238, 238, 0.7);
+  border-radius: 4px;
+  overflow: hidden;
+  transform: translateX(-4em) skewX(-45deg);
+  transition: all 0.2s linear;
+}
+.button:hover::before {
+  animation: highlight 0.4s linear;
+}
+
+@keyframes highlight {
+  0% {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  100% {
+    transform: translateX(10em) skewX(-45deg);
+  }
+}
+.wave-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.wave-btn__text {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #fff;
+  position: relative;
+  z-index: 5;
+}
+.wave-btn__waves {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  background: #4fbb65;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s linear;
+}
+.wave-btn__waves::before, .wave-btn__waves::after {
+  content: "";
+  position: absolute;
+  width: 250%;
+  height: 250%;
+  top: 0;
+  left: 50%;
+  transform: translate(-47%, -93%);
+}
+.wave-btn__waves::before {
+  border-radius: 48%;
+  animation: waves 5s infinite linear;
+}
+.wave-btn__waves::after {
+  background: rgba(121, 79, 69, 0.5);
+  border-radius: 44%;
+  animation: waves 10s infinite linear;
+}
+.wave-btn:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(79, 187, 101, 0.6);
+  transition: all 0.5s ease 0.2s;
+}
+.wave-btn:hover .wave-btn__waves {
+  top: -50px;
+}
+
+@keyframes waves {
+  0% {
+    transform: translate(-47%, -93%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-47%, -93%) rotate(360deg);
+  }
+}
+/*==================== REPEAT BLOCK ====================*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  padding: 15px 0;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: all 0.2s linear;
+}
+.header.scroll::before {
+  background: rgba(117, 93, 154, 0.98);
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.header__logo {
+  flex: 0 0 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.header__logo img {
+  max-width: 100%;
+}
+@media (max-width: 992px) {
+  .header__logo {
+    flex: 0 0 60px;
+    height: 60px;
+  }
+}
+.header__menu {
+  flex: 1 1 auto;
+}
+@media (max-width: 992px) {
+  .header__menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    padding: 160px 0 0 0;
+    overflow: auto;
+    transition: all 0.2s linear;
+  }
+  .header__menu.active {
+    top: 0;
+  }
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  z-index: 5;
+}
+@media (max-width: 992px) {
+  .header__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.header__list-item {
+  position: relative;
+}
+.header__link {
+  position: relative;
+  padding: 0 25px 0 0;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.header__link.active {
+  font-size: 20px;
+}
+.header__link::before, .header__link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.header__link::before {
+  transform: rotate(-40deg);
+  right: 0;
+}
+.header__link::after {
+  transform: rotate(40deg);
+  right: 7px;
+}
+.header__link._active {
+  text-shadow: 0 0 10px #fff;
+}
+.header__link._active::before {
+  transform: rotate(40deg);
+  right: 0;
+}
+.header__link._active::after {
+  transform: rotate(-40deg);
+  right: 7px;
+}
+.header__sub-list {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+  z-index: 10;
+}
+.header__sub-list li:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.header__sub-link {
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.header__button.active .wave-btn__waves::after {
+  background: rgba(117, 93, 154, 0.5);
+}
+.header__burger {
+  position: relative;
+  z-index: 5;
+  display: block;
+  width: 30px;
+  height: 20px;
+  background: none;
+  overflow: hidden;
+}
+.header__burger span, .header__burger::before, .header__burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.6px;
+  left: 0;
+  background: #fff;
+  transition: all 0.2s linear;
+}
+.header__burger span {
+  top: 50%;
+  transform: translate(0, -50%) scale(1);
+}
+.header__burger::before {
+  top: 0;
+}
+.header__burger::after {
+  bottom: 0;
+}
+.header__burger.active span {
+  transform: translate(0, -50%) scale(0);
+}
+.header__burger.active::before {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+.header__burger.active::after {
+  bottom: 9px;
+  transform: rotate(45deg);
+}
+@media (min-width: 992px) {
+  .header__burger {
+    display: none;
+  }
+}
