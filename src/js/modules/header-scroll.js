@@ -1,8 +1,8 @@
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 200) {
-    $('.header,.header__logo,.header__burger,.spoiler__title,.header__link').addClass('scroll');
+  if ($(window).scrollTop() > 150) {
+    $('.header,.menu__link').addClass('scroll');
   }
   else {
-    $('.header,.header__logo,.header__burger,.spoiler__title,.header__link').removeClass('scroll');
+    $('.header,.menu__link').removeClass('scroll');
   }
 });
